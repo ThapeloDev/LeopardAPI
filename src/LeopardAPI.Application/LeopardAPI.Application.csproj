@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>LeopardAPI</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LeopardAPI.Domain\LeopardAPI.Domain.csproj" />
+    <ProjectReference Include="..\LeopardAPI.Application.Contracts\LeopardAPI.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.Application" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="3.0.5" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="3.0.5" />
+  </ItemGroup>
+
+</Project>
